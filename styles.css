@@ -6,7 +6,7 @@ body {
  margin: 0;
  font-family: 'League Spartan', sans-serif;
 }
-
+@media (max-width: 1200px) {
 .container {
     width: 90%;
     margin: 0 auto;
@@ -100,4 +100,133 @@ h3 {
     clear: left;
     margin-top: 2rem;
     font-weight: 400;
+}
+}
+
+/*--------- Desktop ------------*/
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1100px;
+        width: 80%;
+        margin: 8rem auto;
+
+    }
+
+    header {
+        width: 40%;
+        float: left;
+        margin-right: 4rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        color: hsl(300, 43%, 22%);
+        text-align: left;
+        margin: 1rem auto 2rem auto;
+        font-weight: 700;
+    }
+    h2 {
+        color: hsl(300, 43%, 22%);
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        line-height: 130%;
+    }
+
+    .ratings {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .reviews, .guru, .bestTech {
+        background-color: hsl(300, 24%, 96%);
+        width: 80%;
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+        padding: .25rem 0;
+    }
+
+    .guru {
+        position: relative;
+        left: 3rem;
+    }
+
+    .bestTech {
+        position: relative;
+        left: 6rem;
+    }
+
+    
+    .starcontainer {
+        display: flex;
+        justify-content: center;
+        margin: 0 2rem 0 0;
+    }
+
+    .star {
+        height: 1rem;
+        width: 1rem;
+        background-image: url('./images/icon-star.svg');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        margin: 0 0.25rem 0 0.2rem;
+    }
+
+    .customerFeedback {
+        clear: left;
+        color: white;
+        border-radius: .5rem;
+        margin: 3rem auto 0 auto;
+        display: flex;
+    }
+
+    .coltonSmith, .ireneRoberts, .anneWallace {
+        background-color: hsl(300, 43%, 22%);
+        padding: 2rem;
+        border-radius: .5rem;
+    }
+
+    .buyer {
+        color: hsl(333, 80%, 67%);
+        margin: 0 auto;
+    }
+
+    .name {
+        margin: .25rem auto;
+    }
+    
+    .coltonSmith, .ireneRoberts {
+        margin-right: 2rem;
+    }
+
+    .ireneRoberts {
+        position: relative;
+        top: 2rem;
+    }
+
+    .anneWallace {
+        position: relative;
+        top: 4rem;
+    }
+
+    .customer {
+        width: 2.5rem;
+        border-radius: 100%;
+        display: inline;
+        float: left;
+        margin-right: 1rem;
+    }
+
+    .comment {
+        clear: left;
+        margin-top: 2rem;
+        font-weight: 400;
+        line-height: 135%;
+    }
 }
